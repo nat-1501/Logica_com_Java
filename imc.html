@@ -4,7 +4,7 @@
 
     function pulaLinha() {
         
-        document.write("<br>");   
+        document.write("<br><br>");   
     }
 
     function mostra(frase) {
@@ -13,12 +13,24 @@
         pulaLinha (); 
     }   
 
+
+    function calculaImc(peso, altura) {
+
+        var imc = peso / (altura * altura);
+        mostra("O IMC calculado é " + imc);
+
+    }
+
     var pesoNatali = 60;
     var alturaNatali = 1.65;
-
-    var imcNatali = pesoNatali / (alturaNatali * alturaNatali);
+        calculaImc (pesoNatali, alturaNatali);
     
-    mostra("O imc da Natali é " + imcNatali);
+
+    var pesoMarcio = 69;
+    var alturaMarcio = 1.67;
+        calculaImc (pesoMarcio, alturaMarcio);
+    
+    
 
 
 
