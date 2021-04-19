@@ -14,17 +14,18 @@
     }   
 
 
-    function calculaImc(altura1, peso1, altura2, peso2) {
+    function calculaImc(altura, peso) {
 
-        var imc1 = peso1 / (altura1 * altura1);
-        var imc2 = peso2 / (altura2 * altura2);
-        var imcTotal = imc1 + imc2;
-
-        mostra("A soma dos IMC's calculado é " + imcTotal);
+        var imc = peso / (altura * altura);
+        return imc;
 
     }
 
-        calculaImc(1.65, 60, 1.67, 69);
+        var imcNatali = calculaImc(1.65, 60);
+        var imcMarcio = calculaImc(1.67, 69);
+
+        mostra(imcNatali);
+        mostra(imcMarcio);
     
     
 
