@@ -13,7 +13,13 @@
         pulaLinha (); 
     }   
 
-    var vitorias = prompt ("Entre com o numero de vitorias.");
-    var empates = prompt ("Entre com o numero de empates.");
+    var vitorias = parseInt(prompt ("Entre com o numero de vitorias."));
+    alert(vitorias * 3);
 
+    var empates = parseInt(prompt ("Entre com o numero de empates."));
+
+    var pontos = (vitorias * 3) + empates;
+                                                   
+
+    mostra ("Os pontos do seu time são " + pontos)
     </script>
