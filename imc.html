@@ -1,4 +1,5 @@
-
+<meta charset="UTF-8">
+<script>
 
 
     function calculaImc(altura, peso) {
@@ -12,6 +13,15 @@
 
         var imc = calculaImc(alturaInformada, pesoInformado);
         mostra(nome + ",  seu IMC calculado é " + imc);
+
+
+        if (imc >= 18.5) {
+        mostra("Seu imc está abaixo do recomendado");
+    }   
+
+        if (imc => 35) {
+            mostra ("Você está acima do recomendado")
+        }
 
         
 
