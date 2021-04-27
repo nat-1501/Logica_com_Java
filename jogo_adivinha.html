@@ -13,16 +13,25 @@ function mostra (frase) {
 
 };    
 
-var nome = prompt("Informe seu nome")
-var numeroPensado = Math.round(Math.random() * 10);
-console.log (numeroPensado)
+function sorteia (n) {
+    
+    return Math.round(Math.random() * n);
+
+}
+
+var nome = prompt("Informe seu nome");
+var numeroPensado = sorteia (10);
 var chute = parseInt(prompt("Digite seu chute " + nome));
 
 
     if (chute == numeroPensado) {
-        mostra ("Você acertou! Parabens " + nome);
+        mostra ("Você acertou!, pois eu pensei no " + numeroPensado + "Parabéns " + nome );
     } else {
-        mostra ("Você errou " + nome + ", o numero pensado foi " + numeroPensado);
+        if(chute > numeroPensado) {
+        mostra ("Você errou! " + nome + ", Seu chute é maior que o numero pensado! ");
+    } else {
+        mostra ("Você errou! " + nome + ", Seu chute é menor que o numero pensado! " );
+    }    
 
     }
 
