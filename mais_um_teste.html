@@ -1,20 +1,20 @@
 <meta charset="UTF-8">
 
 
-<input/>
+<meta charset="UTF-8">
 
-<button>Clique em mim</button>
+<input/>
+<button>Exibir texto digitado</button>
 
 <script>
+    var input = document.querySelector("input");
 
-    function tchau() {
+    function exibeTexto() {
 
-        alert("Tchau!!!!!")
+        alert(input.value);
+
     }
+
     var button = document.querySelector("button");
-    button.onclick = tchau; //TESTE
-
-
-    
-
+    button.onclick = exibeTexto;
 </script>
